@@ -1,17 +1,21 @@
-# hi there project
+# April 3rd Project
 
   ## Description
-  project there hi
+  Compelte it as soon as you can
 
-   
+  
 
   ## Installation
-  1. 2
-2. 3
-3. 4
+  1. Take one
+2. take two
+3. take three
+4. take four
 
   ## Usage
+  Do this, then taht and those.
   
+      ![Project Screenshot](assets/images/name.png)
+    
 
   ## Credits
   undefined
@@ -30,4 +34,4 @@
   ## Tests
   undefined
 
-  Last updated Fri Apr 02 2021 21:39:35 GMT-0700 (Pacific Daylight Time)
+  Last updated Sat Apr 03 2021 10:25:37 GMT-0700 (Pacific Daylight Time)

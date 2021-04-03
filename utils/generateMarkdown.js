@@ -16,22 +16,55 @@ function renderLicenseSection(license) {
 
 }
 
+// function to insert Table of Content if user confirms
+const insertToc = tocConfirm => {
+  if (tocConfirm) {
+    return `
+      ## Table of Contents
+
+    `;
+  }
+  return '';
+};
+
+// function to insert screenshot from a set location with user input 
+// filename or simply return empty string
+const insertImage = imgFileName => {
+  if (imgFileName) {
+    return `
+      ![Project Screenshot](assets/images/${imgFileName})
+    `;
+  }
+  return '';
+}
+
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
 
-  const tocConfirm = data.tocRequired;
+    //const tocConfirm = data.tocRequired;
 
-  const insertToc = tocConfirm => {
-    if (tocConfirm) {
-      return `
-        ## Table of Contents
+    // function to insert Table of Content if user confirms
+    // const insertToc = tocConfirm => {
+    //   if (tocConfirm) {
+    //     return `
+    //       ## Table of Contents
 
-      `;
-    }
-    return ' ';
-  };
+    //     `;
+    //   }
+    //   return '';
+    // };
 
-  //const { title, description } = data;
+    // function to insert screenshot from a set location with user input 
+    // filename or simply return empty string
+    // const insertImage = imgFileName => {
+    //   if (imgFileName) {
+    //     return `
+    //       ![Project Screenshot](assets/images/${imgFileName})
+    //     `;
+    //   }
+    //   return '';
+    // }
+
   console.log(data);
   console.log("-------------");
 
@@ -48,6 +81,7 @@ function generateMarkdown(data) {
 
   ## Usage
   ${data.usage}
+  ${insertImage(data.imgFile)}
 
   ## Credits
   ${data.credit}

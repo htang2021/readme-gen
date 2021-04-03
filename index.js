@@ -64,7 +64,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'usage',
-            message: 'Provide instructions and examples for use. (Required): ',
+            message: 'Provide usage instructions, and include any supporting materials. (Required): ',
             validate: usageDesc => {
                 if (usageDesc) {
                     return true;
@@ -75,9 +75,12 @@ const promptUser = () => {
             }
         },
         {
-            type: 'link',
-            name: 'description',
-            message: 'Enter description of the project (Required): '
+            type: 'input',
+            name: 'imgFile',
+            message: `To add a screenshot, please enter the name of the file for
+    your screenshot.  Make sure to place your screenshot in the assets/images folder 
+    and enter the name of the screenshot file (or simply press Enter if none).
+    File Name:`
         },
         // {
         //     type: 'input',
