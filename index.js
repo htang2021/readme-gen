@@ -94,10 +94,11 @@ const promptUser = () => {
     Name(s): (hit Enter if none)`
         },
         {
-            type: 'input',
+            type: 'checkbox',
             name: 'license',
-            message: `Please enter license(s) requirements, whether or not and how others
+            message: `Please enter any licensing requirements, whether or not and how others
     can use this project as you see fit (Required): `,
+            choices: ['MIT', 'GNU GPLv3', 'ISC License', 'Apache License 2.0', 'None'],
             default: 'MIT'
         },
         {
@@ -118,7 +119,33 @@ const promptUser = () => {
         {
             type: 'editor',
             name: 'tests',
-            message: 'Enter test guidelines for this application (Nice to have): '
+            message: 'Enter test guidelines for this application in the editor (Nice to have): '
+        },
+        {
+            type: 'input',
+            name: 'gitUserName',
+            message: 'Please enter your GitHub username: (Required)',
+            validate: gitUserName => {
+                if (gitUserName) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username for this project!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email in the event others need to reach out for questions: (Required)',
+            validate: userEmail => {
+                if (userEmail) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address!');
+                    return false;
+                }
+            }
         }
     ])
 }
