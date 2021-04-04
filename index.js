@@ -121,32 +121,32 @@ const promptUser = () => {
     //         name: 'tests',
     //         message: '\nEnter test guidelines for this application in the editor (Recommended): '
     //     },
-    //     {
-    //         type: 'input',
-    //         name: 'gitUserName',
-    //         message: '\nPlease enter your GitHub username: (Required)',
-    //         validate: gitUserName => {
-    //             if (gitUserName) {
-    //                 return true;
-    //             } else {
-    //                 console.log('Please enter your GitHub username for this project!');
-    //                 return false;
-    //             }
-    //         }
-    //     },
-        // {
-        //     type: 'input',
-        //     name: 'email',
-        //     message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
-        //     validate: userEmail => {
-        //         if (userEmail) {
-        //             return true;
-        //         } else {
-        //             console.log('Please enter your email address!');
-        //             return false;
-        //         }
-        //     }
-        // }
+        {
+            type: 'input',
+            name: 'gitUserName',
+            message: '\nPlease enter your GitHub username: (Required)',
+            validate: gitUserName => {
+                if (gitUserName) {
+                    return true;
+                } else {
+                    console.log('Please enter your GitHub username for this project!');
+                    return false;
+                }
+            }
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
+            validate: userEmail => {
+                if (userEmail) {
+                    return true;
+                } else {
+                    console.log('Please enter your email address!');
+                    return false;
+                }
+            }
+        }
     ])
 }
 
