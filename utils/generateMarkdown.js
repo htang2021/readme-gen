@@ -58,41 +58,42 @@ const insertImage = imgFileName => {
 function generateMarkdown(data) {
 
   const mdValue = 
-  `# ${data.title}
+`# ${data.title}
 
-  ## Description
-  ${data.description}
+## Description
+${data.description}
 
-  ${insertToc(data.tocRequired)}
+${insertToc(data.tocRequired)}
 
-  ## Installation
-  ${data.installation}
+## Installation
+${data.installation}
 
-  ## Usage
-  ${data.usage}
-  ${insertImage(data.imgFile)}
+## Usage
+${data.usage}
+${insertImage(data.imgFile)}
 
-  ## Credits
-  ${data.credit}
+## Credits
+${data.credit}
 
-  ${renderLicenseSection(data.license)}
+${renderLicenseSection(data.license)}
 
-  ## Badges
+## Badges
 
-  ## Features
-  ${data.features}
+## Features
+${data.features}
 
-  ## Contributing
-  ${data.contributing}
+## Contributing
+${data.contributing}
 
-  ## Tests
-  ${data.tests}
+## Tests
+${data.tests}
 
-  ## Questions
-  Git Repo: https://wwww.github.com/${data.gitUserName}/
-  Contact Email: ${data.email}
+## Questions
+Git Repo: [${data.gitUserName}](https://wwww.github.com/${data.gitUserName}/)\n
+Contact Email: ${data.email}
 
-  Last updated: ${new Date()}
+
+Last updated: ${new Date()}
 `;
 
   return mdValue;
