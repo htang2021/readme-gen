@@ -6,12 +6,13 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  switch(license) {
+const renderLicenseLink = license => {
+  
+  switch(license[0]) {
     case 'MIT':
-      return '![MIT](https://choosealicense.com/licenses/mit/)';
+      return '[MIT](https://choosealicense.com/licenses/mit/)';
     case 'GNU GPLv3':
-      return '![GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)';
+      return '[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)';
     case 'ISC License':
       return '[ISC License](https://opensource.org/licenses/ISC)';
     case 'Apache License 2.0':
@@ -33,8 +34,9 @@ This project is under the terms of the following license(s):
 }
 
 // function to insert Table of Content if user confirms
-const insertToc = tocConfirm => {
-  if (tocConfirm) {
+const insertToc = data => {
+
+  if (data.tocRequired) {
     return `
 ## Table of Contents
 
@@ -63,7 +65,7 @@ function generateMarkdown(data) {
 ## Description
 ${data.description}
 
-${insertToc(data.tocRequired)}
+${insertToc(data)}
 
 ## Installation
 ${data.installation}
@@ -90,7 +92,7 @@ ${data.tests}
 
 ## Questions
 Git Profile: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)\n
-Any questions or recommendations on this app, please feel free to reach out to [Me](${data.email}).
+Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:${data.email}).
 
 
 Last updated: ${new Date()}

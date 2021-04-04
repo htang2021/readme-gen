@@ -1,59 +1,41 @@
-# hello world
+# hello kitty 5
 
 ## Description
-world hello
+undefined
 
 
 
 ## Installation
-sflskdfjls
-sdfsdfs
-sdfsdf
-
+undefined
 
 ## Usage
-sfdsdfsdf
-sdfsdfasdf
-sdfsafds
+undefined
 
-    ![Project Screenshot](assets/images/fileName)
-    
 
 ## Credits
-Larry, Tony
+undefined
 
 
 ## License
 This project is under the terms of the following license(s): 
-  undefined
+  [MIT](https://choosealicense.com/licenses/mit/)
   
 
 ## Badges
 
 ## Features
-sfasdf
-sfasdfads
-sdfasdfsdfsdfsdf
+undefined
 
 ## Contributing
-
+undefined
 
 ## Tests
-sdfsdfsd
-asdfasdfsdf
-asdfasdfasdf
-asdfasdfasf
-asdfasdfsd
-fasd
-fsad
-fsda
-fsda
-fsdf
+undefined
 
 ## Questions
-Git Profile: [htang2021](https://www.github.com/htang2021/)
+Git Profile: [undefined](https://www.github.com/undefined/)
 
-Any questions or recommendations on this app, please feel free to reach out to [Me](hungtang@hotmail.com).
+Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:hungtang@hotmail.com).
 
 
-Last updated: Sat Apr 03 2021 22:03:27 GMT-0700 (Pacific Daylight Time)
+Last updated: Sat Apr 03 2021 23:08:23 GMT-0700 (Pacific Daylight Time)
