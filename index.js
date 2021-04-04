@@ -94,12 +94,12 @@ const promptUser = () => {
 //     Name(s): (hit Enter if none)`
 //         },
         {
-            type: 'checkbox',
+            type: 'list',
             name: 'license',
             message: `\nPlease enter any licensing requirements, whether or not and how others
-    can use this project as you see fit (Required): `,
+    can use this project (Required): `,
             choices: ['MIT', 'GNU GPLv3', 'ISC License', 'Apache License 2.0', 'None'],
-            default: 'MIT'
+            default: 'None'
         },
     //     {
     //         type: 'editor',

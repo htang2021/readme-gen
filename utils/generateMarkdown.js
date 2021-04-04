@@ -7,8 +7,8 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const renderLicenseLink = license => {
-  
-  switch(license[0]) {
+
+  switch(license) {
     case 'MIT':
       return '[MIT](https://choosealicense.com/licenses/mit/)';
     case 'GNU GPLv3':
@@ -23,14 +23,14 @@ const renderLicenseLink = license => {
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
+
   if (license === 'None') {
     return '';
   }
   return `
 ## License
-This project is under the terms of the following license(s): 
-  ${renderLicenseLink(license)}
-  `;
+This project is under the terms of the following license: 
+${renderLicenseLink(license)}`;
 }
 
 // function to insert Table of Content if user confirms
@@ -50,7 +50,7 @@ const insertToc = data => {
 const insertImage = imgFileName => {
   if (imgFileName) {
     return `
-    ![Project Screenshot](assets/images/${imgFileName})
+    ![Project Screenshot](./assets/images/${imgFileName})
     `;
   }
   return '';
