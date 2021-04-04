@@ -1,55 +1,54 @@
-# Attic Project 2
+# Attic Project 3
 
 ## Description
-Build a pull-down ladder to get to the attic
+Update attic to have a pull-down ladder
 
 
 
 ## Installation
-1. Do a git pull from the github repo
-2. Do an npm install to install dependencies
-3. Visual inspection to make sure dependencies are installed
-4. Run node index.js to start generate readme
+1. Do a
+2. Do b
+3. Do c
+4. Do d
+
 
 ## Usage
-1. Follow and complete the install of this app
-2. Type node index.js to initiate readme creation
-3. Select enter
-4. Do this and that after
+1. Use a
+2. Use b
+3. Use c
+4. Use d
 
-      ![Project Screenshot](assets/images/image.png)
+      ![Project Screenshot](assets/images/image.jpg)
     
 
 ## Credits
-Kylie T, J Tang
+Kylie, J Tang
 
 
-    ## License
-    This project is under the terms of the following license(s): 
-    undefined
+## License
+This project is under the terms of the following license(s): 
+  undefined
   
 
 ## Badges
 
 ## Features
-- Add function
-- Delete function
-- Notification function
-- 2-factor authentication
+- add notification
+- add addition cap
+- add deletion cap
 
 ## Contributing
 
 
 ## Tests
-1. Test to make sure readme is generated
-2. Test on multi-line editor tool
-3. Test on checkbox item on licenses
-4. Test on license(s) links
+1. test notification
+2. test 2-factor authentication
+3. test this and that
 
 ## Questions
-Git Repo: [htang2021](https://wwww.github.com/htang2021/)
+Git Repo: [htang2021](https://www.github.com/htang2021/)
 
 Contact Email: hungtang@hotmail.com
 
 
-Last updated: Sat Apr 03 2021 21:30:31 GMT-0700 (Pacific Daylight Time)
+Last updated: Sat Apr 03 2021 21:44:10 GMT-0700 (Pacific Daylight Time)

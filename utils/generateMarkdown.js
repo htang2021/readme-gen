@@ -26,9 +26,9 @@ const renderLicenseSection = license => {
     return '';
   }
   return `
-    ## License
-    This project is under the terms of the following license(s): 
-    ${renderLicenseLink(license)}
+## License
+This project is under the terms of the following license(s): 
+  ${renderLicenseLink(license)}
   `;
 }
 
@@ -36,9 +36,9 @@ const renderLicenseSection = license => {
 const insertToc = tocConfirm => {
   if (tocConfirm) {
     return `
-      ## Table of Contents
+## Table of Contents
 
-    `;
+`;
   }
   return '';
 };
@@ -89,7 +89,7 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-Git Repo: [${data.gitUserName}](https://wwww.github.com/${data.gitUserName}/)\n
+Git Repo: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)\n
 Contact Email: ${data.email}
 
 
