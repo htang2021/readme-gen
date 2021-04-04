@@ -13,7 +13,7 @@
 
 
   ## Usage
-  1. enter your name
+1. enter your name
 2. enter your project name
 3. enter your ss#
 4. Enter your address
@@ -26,7 +26,7 @@
   Jonathan, Kylie Tang
 
   
-    ## License
+  ## License
     This project is under the terms of the following license(s): 
     undefined
   
@@ -34,7 +34,7 @@
   ## Badges
 
   ## Features
-  - allow user addition
+- allow user addition
 - delete user credential now works
 - support 2-factor authentication
 - added notification to mobile number
@@ -45,9 +45,9 @@
 
   ## Tests
   1. Test by opening up browser
-2. Enter the URL of the link
-3. Login
-4. click button to initiate
+  2. Enter the URL of the link
+  3. Login
+  4. click button to initiate
 
   ## Questions
   Git Repo: https://wwww.github.com/htang2021/
