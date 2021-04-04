@@ -48,7 +48,7 @@ const insertToc = tocConfirm => {
 const insertImage = imgFileName => {
   if (imgFileName) {
     return `
-      ![Project Screenshot](assets/images/${imgFileName})
+    ![Project Screenshot](assets/images/${imgFileName})
     `;
   }
   return '';
@@ -89,8 +89,8 @@ ${data.contributing}
 ${data.tests}
 
 ## Questions
-Git Repo: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)\n
-Contact Email: ${data.email}
+Git Profile: [${data.gitUserName}](https://www.github.com/${data.gitUserName}/)\n
+Any questions or recommendations on this app, please feel free to reach out to [Me](${data.email}).
 
 
 Last updated: ${new Date()}
