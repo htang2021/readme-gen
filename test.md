@@ -9,6 +9,7 @@ undefined
 ## Table of Contents
 
 [Credits](test.md#Credits)
+
 [License](test.md#License)
 
 
@@ -40,6 +41,7 @@ undefined
 
 ## Questions
 Git Profile: [undefined](https://www.github.com/undefined/)
+
 Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:undefined).
 
 
