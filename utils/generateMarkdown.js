@@ -29,7 +29,7 @@ const renderLicenseLink = license => {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// A function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = license => {
 
@@ -39,17 +39,69 @@ const renderLicenseSection = license => {
   return `
 ## License
 This project is under the terms of the following license: 
-${renderLicenseLink(license)}
+${renderLicenseLink(license)}\n
 ${renderLicenseBadge(license)}`;
 }
 
-// function to insert Table of Content if user confirms
-const insertToc = data => {
+const insertSubTitle = data => {
+
+}
+
+// function to first determine length of object for TOC subTitles
+const insertTocList = data => {
 
   if (data.tocRequired) {
+    let tocArray = "";
+    Object.keys(data).forEach(item => {
+      switch(item) {
+        case 'installation':
+          tocArray += "[Installation](test.md#Installation)\n";
+          break;
+        case 'usage':
+          tocArray += "[Usage](test.md#Usage)\n";
+          break;
+        case 'credit':
+          tocArray += "[Credits](test.md#Credits)\n";
+          break;
+        case 'license':
+          tocArray += "[License](test.md#License)\n";
+          break;
+        case 'features':
+          tocArray += "[Features](test.md#Features)\n";
+          break;
+        case 'contributing':
+          tocArray += "[Contributing](test.md#Contributing)\n";
+          break;
+        case 'tests':
+          tocArray += "[Tests](test.md#Tests)\n";
+          break;
+        case 'gitUserName':
+          tocArray += "[Questions](test.md#Questions)\n";
+      }
+    })
+    return `${tocArray}`;
+
+    // const tocNum = Object.keys(data).length;
+    // for (let i=0; i < tocNum; i++) {
+    //   insertSubTitle(data);
+    // }
+
+  } else {
+    return'';
+  }
+  
+    // Object.keys(data).forEach(item => {
+    //   console.log(`${item}`);
+    // })
+}
+
+// function to insert Table of Content Heading only if user confirms
+const insertTocTitle = data => {
+  console.log(Object.keys(data));
+  if (data.tocRequired) {
+    //insertTocList(data);
     return `
 ## Table of Contents
-
 `;
   }
   return '';
@@ -77,7 +129,8 @@ ${renderLicenseBadge(data.license)}
 ## Description
 ${data.description}
 
-${insertToc(data)}
+${insertTocTitle(data)}
+${insertTocList(data)}
 
 ## Installation
 ${data.installation}
@@ -90,8 +143,6 @@ ${insertImage(data.imgFile)}
 ${data.credit}
 
 ${renderLicenseSection(data.license)}
-
-## Badges
 
 ## Features
 ${data.features}

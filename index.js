@@ -35,12 +35,12 @@ const promptUser = () => {
 //                 }
 //             }
 //         },
-//         {
-//             type: 'confirm',
-//             name: 'tocRequired',
-//             message: '\nIs Table of Content required? (y/N): ',
-//             default: false
-//         },
+        {
+            type: 'confirm',
+            name: 'tocRequired',
+            message: '\nIs Table of Content required? (y/N): ',
+            default: false
+        },
 //         {
 //             type: 'editor',
 //             name: 'installation',
@@ -104,7 +104,7 @@ const promptUser = () => {
     //     {
     //         type: 'editor',
     //         name: 'features',
-    //         message: `\nEnter a bulleted list of features for this app (Optional). For example:
+    //         message: `\nEnter a bulleted list of features for this app (Recommended). For example:
     // -  Auto readme.md ceation
     // -  Supports 2-factor authentication
     // -  Added option to add badges`
@@ -119,7 +119,7 @@ const promptUser = () => {
     //     {
     //         type: 'editor',
     //         name: 'tests',
-    //         message: '\nEnter test guidelines for this application in the editor (Nice to have): '
+    //         message: '\nEnter test guidelines for this application in the editor (Recommended): '
     //     },
     //     {
     //         type: 'input',
@@ -134,19 +134,19 @@ const promptUser = () => {
     //             }
     //         }
     //     },
-        {
-            type: 'input',
-            name: 'email',
-            message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
-            validate: userEmail => {
-                if (userEmail) {
-                    return true;
-                } else {
-                    console.log('Please enter your email address!');
-                    return false;
-                }
-            }
-        }
+        // {
+        //     type: 'input',
+        //     name: 'email',
+        //     message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
+        //     validate: userEmail => {
+        //         if (userEmail) {
+        //             return true;
+        //         } else {
+        //             console.log('Please enter your email address!');
+        //             return false;
+        //         }
+        //     }
+        // }
     ])
 }
 
@@ -190,29 +190,7 @@ promptUser()
     //     writeFile(markdownContent);
     // });
 
-// TODO: Create a function to write README file
-//function writeToFile(fileName, data) {}
-// const writeFile = fileContent => {
-//     return new Promise((resolve, reject) => {
-//         fs.writeFile('./README.md', fileContent, err => {
-//             // if there's an error, reject the Promise and send the error
-//             // to the Promise's `.catch()` method
-//             if (err) {
-//                 reject (err);
-//                 // return out of the function here to make sure the Promise
-//                 // doesn't accidentally execute resolve() fucntion as well
-//                 return;
-//             }
 
-//             // if everything went well, resolve the Promise and send the
-//             // successful data to the `.then()` method
-//             resolve({
-//                 ok: true,
-//                 message: 'File created!'
-//             });
-//         });
-//     });
-// };
 
 // TODO: Create a function to initialize app
 //function init() {}
