@@ -25,7 +25,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'description',
-            message: 'Enter description of the project (Required): ',
+            message: '\nEnter description of the project (Required): ',
             validate: projectDesc => {
                 if (projectDesc) {
                     return true;
@@ -38,13 +38,13 @@ const promptUser = () => {
         {
             type: 'confirm',
             name: 'tocRequired',
-            message: 'Is Table of Content required? (y/N): ',
+            message: '\nIs Table of Content required? (y/N): ',
             default: false
         },
         {
             type: 'editor',
             name: 'installation',
-            message: `What are the steps required to install your project? (Required) 
+            message: `\nWhat are the steps required to install your project? (Required) 
     Please provide a step-by-step description of how to get the environment running.  For example,
         1. Do this....
         2. Do that....
@@ -64,7 +64,7 @@ const promptUser = () => {
         {
             type: 'editor',
             name: 'usage',
-            message: `Usage instructions. (Required)
+            message: `\nUsage instructions. (Required)
     Please provide a step-by-step instruction on how to use the application via
     the editor, which will open up once you hit "Enter".  Do not include any images
     or screenshots until asked to.  Once completed, exit the editor but save the file 
@@ -82,7 +82,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'imgFile',
-            message: `To add a screenshot, please enter the name of the file for
+            message: `\nTo add a screenshot, please enter the name of the file for
     your screenshot.  Make sure to place your screenshot in the assets/images folder 
     and enter the name of the screenshot file (or simply press Enter if none).
     File Name:`
@@ -90,13 +90,13 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'credit',
-            message: `List collaborator(s) to this project (separated by commas), if any.
+            message: `\nList collaborator(s) to this project (separated by commas), if any.
     Name(s): (hit Enter if none)`
         },
         {
             type: 'checkbox',
             name: 'license',
-            message: `Please enter any licensing requirements, whether or not and how others
+            message: `\nPlease enter any licensing requirements, whether or not and how others
     can use this project as you see fit (Required): `,
             choices: ['MIT', 'GNU GPLv3', 'ISC License', 'Apache License 2.0', 'None'],
             default: 'MIT'
@@ -104,7 +104,7 @@ const promptUser = () => {
         {
             type: 'editor',
             name: 'features',
-            message: `Enter a bulleted list of features for this app (Optional). For example:
+            message: `\nEnter a bulleted list of features for this app (Optional). For example:
     -  Auto readme.md ceation
     -  Supports 2-factor authentication
     -  Added option to add badges`
@@ -112,19 +112,19 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'contributing',
-            message: `If you would like other developers to contribute to this project, 
+            message: `\nIf you would like other developers to contribute to this project, 
     please incorporate your requirements or adopt to the industry Contributor
     Convenant as you see fit for your project. (Enter to skip)`
         },
         {
             type: 'editor',
             name: 'tests',
-            message: 'Enter test guidelines for this application in the editor (Nice to have): '
+            message: '\nEnter test guidelines for this application in the editor (Nice to have): '
         },
         {
             type: 'input',
             name: 'gitUserName',
-            message: 'Please enter your GitHub username: (Required)',
+            message: '\nPlease enter your GitHub username: (Required)',
             validate: gitUserName => {
                 if (gitUserName) {
                     return true;
@@ -137,7 +137,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'email',
-            message: 'Please enter your email in the event others need to reach out for questions: (Required)',
+            message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
             validate: userEmail => {
                 if (userEmail) {
                     return true;
