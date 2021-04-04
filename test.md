@@ -1,37 +1,56 @@
-# April 3rd Project
+# Attic Project1
 
   ## Description
-  Compelte it as soon as you can
+  Project for the attic remodeling
 
   
 
   ## Installation
-  1. Take one
-2. take two
-3. take three
-4. take four
+  1. Do this
+2. Do that
+3. Do 3
+4. Do 4
+
 
   ## Usage
-  Do this, then taht and those.
+  1. enter your name
+2. enter your project name
+3. enter your ss#
+4. Enter your address
+
   
-      ![Project Screenshot](assets/images/name.png)
+      ![Project Screenshot](assets/images/screenshot.png)
     
 
   ## Credits
-  undefined
+  Jonathan, Kylie Tang
 
-  ## License
-  undefined
+  
+    ## License
+    This project is under the terms of the following license(s): 
+    undefined
+  
 
   ## Badges
 
   ## Features
-  undefined
+  - allow user addition
+- delete user credential now works
+- support 2-factor authentication
+- added notification to mobile number
+
 
   ## Contributing
-  undefined
+  
 
   ## Tests
-  undefined
+  1. Test by opening up browser
+2. Enter the URL of the link
+3. Login
+4. click button to initiate
 
-  Last updated Sat Apr 03 2021 10:25:37 GMT-0700 (Pacific Daylight Time)
+  ## Questions
+  Git Repo: https://wwww.github.com/htang2021/
+  Contact Email: hungtang@hotmail.com
+
+  Last updated: Sat Apr 03 2021 21:06:15 GMT-0700 (Pacific Daylight Time)
