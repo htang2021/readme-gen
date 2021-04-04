@@ -87,12 +87,12 @@ const promptUser = () => {
 //     and enter the name of the screenshot file (or simply press Enter if none).
 //     File Name:`
 //         },
-//         {
-//             type: 'input',
-//             name: 'credit',
-//             message: `\nList collaborator(s) to this project (separated by commas), if any.
-//     Name(s): (hit Enter if none)`
-//         },
+        {
+            type: 'input',
+            name: 'credit',
+            message: `\nList collaborator(s) to this project (separated by commas), if any.
+    Name(s): (hit Enter if none)`
+        },
         {
             type: 'list',
             name: 'license',
