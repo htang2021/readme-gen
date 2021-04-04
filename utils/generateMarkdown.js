@@ -55,28 +55,28 @@ const insertTocList = data => {
     Object.keys(data).forEach(item => {
       switch(item) {
         case 'installation':
-          tocArray += "[Installation](test.md#Installation) \n\n";
+          tocArray += " [Installation](test.md#Installation) \n\n";
           break;
         case 'usage':
-          tocArray += "[Usage](test.md#Usage) \n\n";
+          tocArray += " [Usage](test.md#Usage) \n\n";
           break;
         case 'credit':
-          tocArray += "[Credits](test.md#Credits) \n\n";
+          tocArray += " [Credits](test.md#Credits) \n\n";
           break;
         case 'license':
-          tocArray += "[License](test.md#License) \n\n";
+          tocArray += " [License](test.md#License) \n\n";
           break;
         case 'features':
-          tocArray += "[Features](test.md#Features) \n\n";
+          tocArray += " [Features](test.md#Features) \n\n";
           break;
         case 'contributing':
-          tocArray += "[Contributing](test.md#Contributing) \n\n";
+          tocArray += " [Contributing](test.md#Contributing) \n\n";
           break;
         case 'tests':
-          tocArray += "[Tests](test.md#Tests) \n\n";
+          tocArray += " [Tests](test.md#Tests) \n\n";
           break;
         case 'gitUserName':
-          tocArray += "[Questions](test.md#Questions) \n\n";
+          tocArray += " [Questions](test.md#Questions) \n\n";
       }
     })
     return `${tocArray}`;
