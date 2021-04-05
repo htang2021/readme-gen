@@ -52,28 +52,28 @@ const insertTocList = data => {
     Object.keys(data).forEach(item => {
       switch(item) {
         case 'installation':
-          tocArray += " [Installation](test.md#Installation) \n\n";
+          tocArray += " [Installation](README.md#Installation) \n\n";
           break;
         case 'usage':
-          tocArray += " [Usage](test.md#Usage) \n\n";
+          tocArray += " [Usage](README.md#Usage) \n\n";
           break;
         case 'credit':
-          tocArray += " [Credits](test.md#Credits) \n\n";
+          tocArray += " [Credits](README.md#Credits) \n\n";
           break;
         case 'license':
-          tocArray += " [License](test.md#License) \n\n";
+          tocArray += " [License](README.md#License) \n\n";
           break;
         case 'features':
-          tocArray += " [Features](test.md#Features) \n\n";
+          tocArray += " [Features](README.md#Features) \n\n";
           break;
         case 'contributing':
-          tocArray += " [Contributing](test.md#Contributing) \n\n";
+          tocArray += " [Contributing](README.md#Contributing) \n\n";
           break;
         case 'tests':
-          tocArray += " [Tests](test.md#Tests) \n\n";
+          tocArray += " [Tests](README.md#Tests) \n\n";
           break;
         case 'gitUserName':
-          tocArray += " [Questions](test.md#Questions) \n\n";
+          tocArray += " [Questions](README.md#Questions) \n\n";
       }
     })
     return `${tocArray}`;
@@ -101,6 +101,18 @@ const insertImage = imgFileName => {
     return `
     ![Project Screenshot](./assets/images/${imgFileName})
     `;
+  }
+  return '';
+}
+
+// Function to insert Contributing section if choose yes to adopt
+const renderContribution = isContributing => {
+  if (isContributing) {
+    return `
+## Contributing
+Adopting to Contributor Covenant!
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+`;
   }
   return '';
 }
@@ -134,6 +146,7 @@ ${renderLicenseSection(data.license)}
 ## Features
 ${data.features}
 
+${renderContribution(data.contributing)}
 ## Contributing
 ${data.contributing}
 

@@ -111,11 +111,11 @@ const promptUser = () => {
     `
         },
         {
-            type: 'input',
+            type: 'confirm',
             name: 'contributing',
-            message: `\nIf you would like other developers to contribute to this project, 
-    please incorporate your requirements or adopt to the industry Contributor
-    Convenant as you see fit for your project. (Enter to skip)`
+            message: `\nWould you like other developers to contribute to this project and adopt 
+    the industry Contributor Convenant? (y/N): `,
+            default: false
         },
         {
             type: 'editor',
@@ -125,7 +125,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'gitUserName',
-            message: '\nPlease enter your GitHub username: (Required)',
+            message: '\nPlease enter your GitHub username (Required): ',
             validate: gitUserName => {
                 if (gitUserName) {
                     return true;
@@ -138,7 +138,7 @@ const promptUser = () => {
         {
             type: 'input',
             name: 'email',
-            message: '\nPlease enter your email in the event others need to reach out for questions: (Required)',
+            message: '\nPlease enter your email in the event others need to reach out for questions (Required): ',
             validate: userEmail => {
                 if (userEmail) {
                     return true;
