@@ -105,6 +105,18 @@ const insertImage = imgFileName => {
   return '';
 }
 
+// Function to insert Credit section for any collaborators to the project
+const renderCreditSection = collaborators => {
+  if (collaborators) {
+    return `
+## Credits
+Thank you for the following collaborators that helped build this app:\n
+${collaborators}
+`;
+  }
+  return '';
+}
+
 // Function to insert Contributing section if choose yes to adopt
 const renderContribution = isContributing => {
   if (isContributing) {
@@ -138,8 +150,7 @@ ${data.installation}
 ${data.usage}
 ${insertImage(data.imgFile)}
 
-## Credits
-${data.credit}
+${renderCreditSection(data.credit)}
 
 ${renderLicenseSection(data.license)}
 
@@ -147,8 +158,6 @@ ${renderLicenseSection(data.license)}
 ${data.features}
 
 ${renderContribution(data.contributing)}
-## Contributing
-${data.contributing}
 
 ## Tests
 ${data.tests}
