@@ -1,6 +1,6 @@
-# README Generator
+# README Generator 2
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Description
 Using node.js and inquirer package to create a README generator that provides the developer an easy to use tool to generate a readme with ease. Intent of this tool is to save developers time so that they can focus on their development.
@@ -40,6 +40,7 @@ Using node.js and inquirer package to create a README generator that provides th
 11. Locate the generated README.md file in the ./dist production distribution directory and verify that all responses were captured accurately.
 12. Take the steps to add, commit, and push to your project git repo accordingly.
 
+
 ## Usage
 1. Git pull the readme-gen repo and npm install to install dependencies.
 2. From CLI, run '$ node index.js' 
@@ -51,15 +52,14 @@ Using node.js and inquirer package to create a README generator that provides th
     ![Project Screenshot](../assets/images/readme-gen-mockup.png)
     
 
-## Credits
 
 
 
 ## License
 This project is under the terms of the following license: 
-[MIT](https://choosealicense.com/licenses/mit/)
+[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
 ## Features
 - README generator application
@@ -73,8 +73,6 @@ This project is under the terms of the following license:
 Adopting to Contributor Covenant!
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 
-## Contributing
-true
 
 ## Tests
 - Run through all of the questions and selectively respond to make sure README is created based on the responses accurately.
@@ -91,4 +89,4 @@ Git Profile: [htang2021](https://www.github.com/htang2021/)
 Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:hungtang@hotmail.com).
 
 
-Last updated: Sun Apr 04 2021 22:50:19 GMT-0700 (Pacific Daylight Time)
+Last updated: Sun Apr 04 2021 23:04:59 GMT-0700 (Pacific Daylight Time)
