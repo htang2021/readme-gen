@@ -3,26 +3,26 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-Using node.js and inquirer package to create a README generator that provides the developer an easy to use tool to generate a readme with ease.  Intent of this tool is to save developers time so that they can focus on their development.
+Using node.js and inquirer package to create a README generator that provides the developer an easy to use tool to generate a readme with ease. Intent of this tool is to save developers time so that they can focus on their development.
 
 
 ## Table of Contents
 
- [Installation](test.md#Installation) 
+ [Installation](README.md#Installation) 
 
- [Usage](test.md#Usage) 
+ [Usage](README.md#Usage) 
 
- [Credits](test.md#Credits) 
+ [Credits](README.md#Credits) 
 
- [License](test.md#License) 
+ [License](README.md#License) 
 
- [Features](test.md#Features) 
+ [Features](README.md#Features) 
 
- [Contributing](test.md#Contributing) 
+ [Contributing](README.md#Contributing) 
 
- [Tests](test.md#Tests) 
+ [Tests](README.md#Tests) 
 
- [Questions](test.md#Questions) 
+ [Questions](README.md#Questions) 
 
 
 
@@ -48,7 +48,7 @@ Using node.js and inquirer package to create a README generator that provides th
 5. Once all questions are answered, a README will be created in your ./dist directory.
 6. Verify README content with a markdown interpreter or via github in your repository.
 
-    ![Project Screenshot](./assets/images/readme-gen-mockup.png)
+    ![Project Screenshot](../assets/images/readme-gen-mockup.png)
     
 
 ## Credits
@@ -70,7 +70,11 @@ This project is under the terms of the following license:
 
 
 ## Contributing
+Adopting to Contributor Covenant!
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
 
+## Contributing
+true
 
 ## Tests
 - Run through all of the questions and selectively respond to make sure README is created based on the responses accurately.
@@ -87,4 +91,4 @@ Git Profile: [htang2021](https://www.github.com/htang2021/)
 Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:hungtang@hotmail.com).
 
 
-Last updated: Sun Apr 04 2021 20:37:48 GMT-0700 (Pacific Daylight Time)
+Last updated: Sun Apr 04 2021 22:50:19 GMT-0700 (Pacific Daylight Time)
