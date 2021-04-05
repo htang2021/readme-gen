@@ -1,6 +1,6 @@
-# README Generator 2
+# README Generator Walk-Thru
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 Using node.js and inquirer package to create a README generator that provides the developer an easy to use tool to generate a readme with ease. Intent of this tool is to save developers time so that they can focus on their development.
@@ -53,13 +53,18 @@ Using node.js and inquirer package to create a README generator that provides th
     
 
 
+## Credits
+Thank you for the following collaborators that helped build this app:
+
+Hung Tang
+
 
 
 ## License
 This project is under the terms of the following license: 
-[GNU GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html)
+[Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Features
 - README generator application
@@ -89,4 +94,4 @@ Git Profile: [htang2021](https://www.github.com/htang2021/)
 Any questions or recommendations on this app, please feel free to reach out to [Me](mailto:hungtang@hotmail.com).
 
 
-Last updated: Sun Apr 04 2021 23:04:59 GMT-0700 (Pacific Daylight Time)
+Last updated: Sun Apr 04 2021 23:54:03 GMT-0700 (Pacific Daylight Time)
