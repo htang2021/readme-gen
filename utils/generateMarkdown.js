@@ -43,11 +43,8 @@ ${renderLicenseLink(license)}\n
 ${renderLicenseBadge(license)}`;
 }
 
-const insertSubTitle = data => {
-
-}
-
-// function to first determine length of object for TOC subTitles
+// Function to cycle thru returned list of keys from the response data object
+// and map to the SubTitles to create a TOC with page link to each
 const insertTocList = data => {
 
   if (data.tocRequired) {
@@ -81,25 +78,15 @@ const insertTocList = data => {
     })
     return `${tocArray}`;
 
-    // const tocNum = Object.keys(data).length;
-    // for (let i=0; i < tocNum; i++) {
-    //   insertSubTitle(data);
-    // }
-
   } else {
     return'';
   }
-  
-    // Object.keys(data).forEach(item => {
-    //   console.log(`${item}`);
-    // })
 }
 
-// function to insert Table of Content Heading only if user confirms
+// Function to insert Table of Content Heading only if user confirms
 const insertTocTitle = data => {
   console.log(Object.keys(data));
   if (data.tocRequired) {
-    //insertTocList(data);
     return `
 ## Table of Contents
 `;
@@ -107,7 +94,7 @@ const insertTocTitle = data => {
   return '';
 };
 
-// function to insert screenshot from a set location with user input 
+// Function to insert screenshot from a set location with user input 
 // filename or simply return empty string
 const insertImage = imgFileName => {
   if (imgFileName) {
@@ -118,7 +105,7 @@ const insertImage = imgFileName => {
   return '';
 }
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 function generateMarkdown(data) {
 
   const mdValue = 
