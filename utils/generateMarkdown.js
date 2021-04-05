@@ -99,7 +99,7 @@ const insertTocTitle = data => {
 const insertImage = imgFileName => {
   if (imgFileName) {
     return `
-    ![Project Screenshot](./assets/images/${imgFileName})
+    ![Project Screenshot](../assets/images/${imgFileName})
     `;
   }
   return '';
