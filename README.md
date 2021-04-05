@@ -50,7 +50,7 @@ Using node.js and inquirer package to create a README generator that provides th
 A video walk-thru for this app is also available [HERE](https://drive.google.com/file/d/1rKZi9U448YqS5BFgFmWL8IW8V56Gv4sT/view).
 
     
-    ![Project Screenshot](./assets/images/readme-gen-mockup.png)
+    ![Project Mockup Image](assets/images/readme-gen-mockup.png)
     
 
 
