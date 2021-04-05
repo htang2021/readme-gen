@@ -49,17 +49,10 @@ Using node.js and inquirer package to create a README generator that provides th
 5. Once all questions are answered, a README will be created in your ./dist directory.
 6. Verify README content with a markdown interpreter or via github in your repository.
 
-A video walk-thru for this app is also available [HERE]](https://drive.google.com/file/d/1rKZi9U448YqS5BFgFmWL8IW8V56Gv4sT/view).
+A video walk-thru for this app is also available [HERE](https://drive.google.com/file/d/1rKZi9U448YqS5BFgFmWL8IW8V56Gv4sT/view).
 
-    ![Project Screenshot](../assets/images/readme-gen-mockup.png)
+    ![Project Screenshot](./assets/images/readme-gen-mockup.png)
     
-
-
-## Credits
-Thank you for the following collaborators that helped build this app:
-
-Hung Tang
-
 
 
 ## License
